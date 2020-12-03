@@ -1,0 +1,20 @@
+@import '_variables.scss';
+
+
+.minicart-wrapper .action.showcart .counter.qty.empty {
+  display: block;
+  float: right;
+}
+
+.minicart-wrapper .action.showcart .counter.qty {
+  background-color: $white;
+  span.counter-number {
+    font-size: $font-size-xsmall;
+    color: $black;
+  }
+}
+
+.header.panel > .header.links > li {
+  margin-left: 2px !important;
+  padding: 4px 0px;
+}

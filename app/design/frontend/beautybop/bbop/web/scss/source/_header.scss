@@ -1,0 +1,134 @@
+@import "_variables.scss";
+
+.panel .header {
+  background-color: $white;
+}
+
+ul.header.links li a {
+  color: $black;
+  font-family: $font-family;
+  /*font-size: $font-size-xsmall;*/
+}
+
+.header.panel > .header.links {
+  font-size: $font-size-xsmall !important;
+}
+
+.page-title-wrapper {
+  display: block;
+}
+
+a.account-link {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 32px;
+}
+
+a.account-link:before {
+  content: "\f007";
+  padding-right: 5px;
+  font-family: "fontawesome";
+}
+
+.minicart-wrapper .action.showcart.active:before {
+  content: "\f290" !important;
+  padding-right: 5px;
+  font-family: "fontawesome" !important;
+}
+
+.minicart-wrapper .action.showcart:before {
+  margin-left: 30px;
+  content: "\f290" !important;
+  /*padding-right: 5px;*/
+  width: auto;
+  font-family: "fontawesome";
+  color: $black;
+  font-size: $font-size-small;
+  a:hover {
+    color: #8f8f8f;
+  }
+}
+
+li.authorization-link {
+  a {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.breadcrumbs .item:not(:last-child):after {
+  vertical-align: sub !important;
+}
+
+#slides {
+  margin: 0px !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  padding: 0% !important;
+}
+.gallery-placeholder {
+  width: 100%;
+}
+
+.blg-cnt-1 {
+  border: solid 1px $red;
+  padding: 40px;
+  width: 50%;
+  p {
+    font-size: $font-size-medium;
+  }
+}
+
+.header.content {
+  padding: 15px 20px 0;
+  margin-left: 0px !important;
+  max-width: 100% !important;
+  margin-right: 0px !important;
+  background-color: $black;
+}
+
+.block-search input {
+  width: 100%;
+  min-width: 270px;
+  border: none;
+}
+
+// advance text under search
+.block-search .nested {
+  display: none !important;
+}
+
+.block-search {
+  float: right;
+  padding-left: 15px;
+  position: relative;
+  left: -351px;
+  z-index: 4;
+  width: 119px;
+  /* top: 0px; */
+  bottom: 20px;
+}
+
+.block-search .action.search:before {
+  float: right;
+  position: relative;
+  right: -155px;
+}
+
+.header {
+  .logo {
+    margin: 0px auto 0px 43%;
+  }
+}
+
+body {
+  padding: 0 !important;
+  font-family: $font-family;
+}

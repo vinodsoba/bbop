@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+      <move destination="header.panel" element="freeshipping"/>
+        <move element="navigation.sections" destination="header-wrapper"/>
+        <move element="top.search" destination="header.panel" before="my-account-link" />
+        <block class="Magento\Customer\Block\Account\Link" name="my-account-link">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">Account</argument>
+                <argument name="class" xsi:type="string" translate="true">account-link</argument>
+            </arguments>
+          </block>
+          <move element="my-account-link" destination="top.links"/>
+          <move element="minicart" destination="top.links" after="-"/>
+      <referenceBlock name="logo">
+                <arguments>
+                    <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                    <argument name="logo_img_width" xsi:type="number">203</argument>
+                    <argument name="logo_img_height" xsi:type="number">67</argument>
+                </arguments>
+    </referenceBlock>
+    <referenceContainer name="footer">
+    <block class="Magento\Framework\View\Element\Template" name="footer-changes" template="Magento_Theme::html/footer.phtml"/>
+    </referenceContainer>
+      <move element="footer-changes" destination="footer" before="-" />
+    <referenceBlock name="footer_links" remove="true" />
+          <referenceBlock name="copyright" remove="false" />
+          <referenceBlock name="wish-list-link" remove="true" />
+          <referenceBlock name="store_language" remove="false" />
+          <referenceBlock name="register-link" remove="false" />
+  </body>
+</page>

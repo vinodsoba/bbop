@@ -1,0 +1,160 @@
+@import "_variables.scss";
+.page-bottom {
+  .content {
+    height: 100px;
+  }
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+.footer-company {
+  padding: 0px 10px 10px;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 100px;
+  h1 {
+    font-size: $font-size-small;
+    padding-bottom: 23px;
+  }
+}
+
+h2.connect-with {
+  padding-bottom: 23px;
+}
+
+.footer-payments {
+  margin-right: 100px;
+  width: 160px;
+  p.payment-icon {
+    display: inline-block;
+    em {
+      color: $white;
+    }
+  }
+  h1 {
+    font-size: $font-size-small;
+    padding-bottom: 23px;
+  }
+}
+
+#newsletter-validate-detail {
+  button.subscribe {
+    margin: 13px 0px 0px 0px;
+  }
+}
+
+.newsletter {
+  float: left;
+  width: 414px;
+  margin-right: 23px;
+}
+
+.newsletter-custom {
+  border-left: solid 1px #ddd;
+  padding-left: 48px;
+  .title strong {
+    font-size: $font-size-medium;
+  }
+}
+
+.container-wrapper-newsletter {
+  width: 200px;
+  p.payment-icon {
+    display: inline-block;
+    em {
+      color: $white;
+    }
+  }
+}
+
+.footer-contact {
+  margin-right: 100px;
+  width: 224px;
+  h1 {
+    font-size: $font-size-small;
+    padding-bottom: 23px;
+  }
+  p.payment-icon {
+    font-size: $font-size-xsmall;
+    line-height: 1.2;
+    display: inline-block;
+  }
+  p:nth-child(4) {
+    padding-bottom: 27px;
+  }
+  em {
+    color: $white;
+  }
+}
+
+.footer .copyright {
+  margin: 84px 8px 0px 0px;
+  h1 {
+    font-size: $font-size-small;
+  }
+}
+
+.fa-cc-paypal:before {
+  content: "\f1f4";
+  font-family: fontawesome;
+  font-size: $font-size-large;
+  color: $black;
+  font-style: normal;
+}
+
+.fa-cc-paypal:after {
+  color: $white;
+}
+
+.fa-cc-visa:before {
+  content: "\f1f0";
+  font-family: fontawesome;
+  font-size: $font-size-large;
+  color: $black;
+  font-style: normal;
+}
+
+.footer.content {
+  .links {
+    display: inline-flex !important;
+    position: relative;
+  }
+  .newsletter-custom {
+    display: none;
+  }
+  a {
+    font-size: $footer-links;
+    color: $black;
+  }
+
+  p.phone-icon {
+    font-size: $font-size-small;
+  }
+
+  h2 {
+    font-size: $font-size-medium;
+    padding-bottom: 20px;
+    font-weight: 900;
+  }
+}
+
+ul {
+  li {
+    font-size: $footer-links;
+    line-height: 2.3;
+  }
+  a {
+    color: $black;
+  }
+}
+
+.fa-instagram:before,
+.fa-facebook-f:before,
+.fa-home:before,
+.fa-phone:before {
+  font-size: $font-size-medium;
+  padding-right: 10px;
+  color: $black;
+}
